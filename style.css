@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+:root {
+  --primaryColor: #f09d51;
+  --mainWhite: #ECF0F1;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --headAndFoot: #45B39D;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: var(--mainBlack);
+  background: #FBFCFC;
+  font-family: 'Poppins', sans-serif;
+}
+.git{
+	font-size: 20px;
+}
+.git,  h4 a{
+	text-decoration: none;
+	color: black;
+
+}
+.image-holder{
+	margin-top: 20px;
+	text-align: center;
+}
+.image-holder img{
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+}
+.skills-img img{
+	width: 120px;
+	height: 100px;
+	margin-top: 20px;
+	padding: 12px;
+}
+.skills{
+	text-align: center;
+	background-image: var(--mainBlack);
+	margin-top: 50px;
+}
+.presentation{
+	padding-left: 30px;
+}
+.deeds{
+	margin-top: 10px;
+}
+.deeds li{
+	margin-left: 15px;
+}
+.works-intro{
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+
+.works{
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+}
+.img-container img{
+	width: 300px;
+	height: 200px;
+}
+.img-container:hover .description {
+  transform: translateX(0);
+}
+.product h3 {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  letter-spacing: var(--mainSpacing);
+  text-align: center;
+}
+
+.product h4 {
+  margin-top: 0.7rem;
+  letter-spacing: var(--mainSpacing);
+  color: var(--primaryColor);
+  text-align: center;
+}
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+.description{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left:0; 
+	background-color: var(--headAndFoot);
+	transition: var(--mainTransition);
+	transform: translateX(-101%);
+	padding: 6% 0 0 6%;
+}
+
+.last, .header{
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--headAndFoot);
+	padding: 20px;
+}
+.last{
+	margin-top: 30px;
+}
+.last a{
+	padding-right: 8px;
+}
+.last a:hover{
+	cursor: pointer;
+	color: white;
+}
+.face{
+	color: #3b5999;
+}
+.twi{
+	color: #55acee;
+}
+.ig{
+	color: #e4405f;
+}
+.you{
+	color: #cd201f;
+}.plus{
+	color: #dd4b39;
+}
